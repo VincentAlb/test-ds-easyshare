@@ -189,14 +189,17 @@
               <span>Email</span>
               <input type="email" value="contact@exemple.com" />
             </label>
-            <label class="field">
+            <div class="field custom-select-field">
               <span>Catégorie</span>
-              <select>
-                <option>Produit</option>
-                <option>Marketing</option>
-                <option>Admin</option>
-              </select>
-            </label>
+              <details class="select-menu">
+                <summary>Produit</summary>
+                <div class="select-options">
+                  <button type="button" class="select-option is-selected">Produit</button>
+                  <button type="button" class="select-option">Marketing</button>
+                  <button type="button" class="select-option">Admin</button>
+                </div>
+              </details>
+            </div>
             <label class="field field-error">
               <span>État erreur</span>
               <input type="text" value="Valeur invalide" />

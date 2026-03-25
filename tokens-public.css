@@ -5,73 +5,73 @@
      This is the layer a developer should consume in product code. */
 
   /* Backgrounds and surfaces */
-  --bg: var(--ref-color-ocean-800); /* app page background */
-  --bg-canvas: var(--ref-color-ocean-900); /* deepest background */
-  --surface: rgba(52, 90, 120, 0.42); /* low-emphasis surface: inputs, tabs, compact containers */
-  --surface-hover: rgba(52, 90, 120, 0.58); /* hover state for neutral surfaces */
-  --surface-active: rgba(52, 90, 120, 0.72); /* active state for neutral surfaces */
-  --surface-raised: rgba(36, 69, 96, 0.84); /* cards, panels, secondary buttons */
-  --surface-raised-border: rgba(255, 255, 255, 0.16); /* border for raised surfaces */
-  --surface-contrast: rgba(255, 255, 255, 0.18); /* contrast highlight / skeleton midpoint */
-  --surface-inverse: rgba(255, 255, 255, 0.28); /* light track and inverse surface */
-  --surface-overlay: rgba(52, 90, 120, 0.9); /* sticky nav and overlay panel */
-  --surface-overlay-strong: rgba(26, 51, 72, 0.92); /* tooltip and strong overlay */
+  --bg: var(--ref-color-primary); /* app page background */
+  --bg-canvas: var(--ref-color-primary-dark); /* deepest background */
+  --surface: var(--ref-color-primary-dark); /* low-emphasis surface: inputs, tabs, compact containers */
+  --surface-hover: var(--ref-color-primary); /* hover state for neutral surfaces */
+  --surface-active: var(--ref-color-primary-light); /* active state for neutral surfaces */
+  --surface-raised: var(--ref-color-primary-light); /* cards, panels, secondary buttons */
+  --surface-raised-border: var(--ref-color-tertiary); /* border for raised surfaces */
+  --surface-contrast: var(--ref-color-secondary-light); /* contrast highlight / skeleton midpoint */
+  --surface-inverse: var(--ref-color-text-base); /* light track and inverse surface */
+  --surface-overlay: var(--ref-color-primary); /* sticky nav and overlay panel */
+  --surface-overlay-strong: var(--ref-color-primary-dark); /* tooltip and strong overlay */
 
   /* Borders */
-  --line: var(--ref-color-glass-border); /* default border */
-  --line-strong: rgba(255, 255, 255, 0.18); /* stronger border on elevated surfaces */
-  --line-contrast: var(--ref-color-glass-border-strong); /* high-contrast border */
+  --line: var(--ref-color-tertiary); /* default border */
+  --line-strong: var(--ref-color-tertiary-light); /* stronger border on elevated surfaces */
+  --line-contrast: var(--ref-color-text-muted); /* high-contrast border */
 
   /* Text */
   --text: var(--ref-color-text-base); /* default text */
   --text-soft: var(--ref-color-text-muted); /* secondary text */
-  --white: var(--ref-color-white); /* text on saturated fills */
+  --white: var(--ref-color-text-base); /* text on saturated fills */
 
   /* Brand and action */
-  --primary: var(--ref-color-brand-500); /* primary CTA background */
-  --primary-hover: var(--ref-color-brand-hover); /* primary CTA hover */
-  --primary-soft: var(--ref-color-brand-highlight); /* soft brand highlight */
-  --primary-glow: rgba(255, 224, 102, 0.08); /* decorative yellow glow */
+  --primary: var(--ref-color-accent); /* primary CTA background */
+  --primary-hover: var(--ref-color-accent-light); /* primary CTA hover */
+  --primary-soft: var(--ref-color-accent-light); /* soft brand highlight */
+  --primary-glow: var(--ref-color-warning-bg); /* decorative yellow glow */
 
-  --secondary: var(--ref-color-ocean-400); /* secondary accent */
-  --secondary-hover: var(--ref-color-info-500); /* hover for secondary buttons */
-  --secondary-glow: rgba(52, 90, 120, 0.16); /* decorative blue glow */
-  --neutral: var(--ref-color-ocean-500); /* neutral support tone */
+  --secondary: var(--ref-color-secondary); /* secondary accent */
+  --secondary-hover: var(--ref-color-secondary-dark); /* hover for secondary buttons */
+  --secondary-glow: var(--ref-color-info-bg); /* decorative blue glow */
+  --neutral: var(--ref-color-tertiary); /* neutral support tone */
 
   /* Shared interactive blue */
-  --focus-ring: rgba(56, 189, 248, 0.42); /* global focus ring */
-  --interactive-selected-bg: rgba(56, 189, 248, 0.34); /* active tabs, chips, filters */
-  --interactive-selected-border: rgba(56, 189, 248, 0.42); /* selected border */
-  --interactive-selected-text: var(--ref-color-white); /* selected text */
-  --interactive-fill-strong: var(--ref-color-info-500); /* toggle on and strong interactive fill */
+  --focus-ring: var(--ref-color-info-light); /* global focus ring */
+  --interactive-selected-bg: var(--ref-color-secondary-dark); /* active tabs, chips, filters */
+  --interactive-selected-border: var(--ref-color-secondary-light); /* selected border */
+  --interactive-selected-text: var(--ref-color-text-base); /* selected text */
+  --interactive-fill-strong: var(--ref-color-secondary); /* toggle on and strong interactive fill */
 
   /* Feedback */
-  --success: var(--ref-color-success-500); /* success base */
-  --success-soft: var(--ref-color-success-300); /* success text / highlight */
-  --success-surface: rgba(34, 197, 94, 0.16); /* success badge and chip */
-  --success-surface-soft: rgba(34, 197, 94, 0.12); /* success alert */
-  --success-border: rgba(34, 197, 94, 0.24); /* success border */
+  --success: var(--ref-color-success); /* success base */
+  --success-soft: var(--ref-color-success-light); /* success text / highlight */
+  --success-surface: var(--ref-color-success-bg); /* success badge and chip */
+  --success-surface-soft: var(--ref-color-success-bg); /* success alert */
+  --success-border: var(--ref-color-success-light); /* success border */
 
-  --warning: var(--ref-color-warning-500); /* warning base */
-  --warning-soft: #ffd08a; /* warning text / highlight */
-  --warning-surface: rgba(246, 135, 4, 0.16); /* warning badge and chip */
-  --warning-surface-soft: rgba(246, 135, 4, 0.12); /* warning alert */
-  --warning-border: rgba(246, 135, 4, 0.24); /* warning border */
+  --warning: var(--ref-color-warning); /* warning base */
+  --warning-soft: var(--ref-color-warning-light); /* warning text / highlight */
+  --warning-surface: var(--ref-color-warning-bg); /* warning badge and chip */
+  --warning-surface-soft: var(--ref-color-warning-bg); /* warning alert */
+  --warning-border: var(--ref-color-warning-light); /* warning border */
 
-  --danger: var(--ref-color-danger-500); /* danger base */
-  --danger-soft: #ffb7b8; /* danger text / highlight */
-  --danger-surface: rgba(239, 68, 68, 0.16); /* danger badge and button */
-  --danger-surface-soft: rgba(239, 68, 68, 0.12); /* danger alert */
-  --danger-border: rgba(239, 68, 68, 0.24); /* danger border */
-  --danger-border-strong: rgba(241, 64, 66, 0.32); /* stronger danger border */
-  --danger-border-emphasis: rgba(241, 64, 66, 0.72); /* invalid field border */
-  --danger-ring-inset: rgba(239, 68, 68, 0.18); /* invalid field inset ring */
+  --danger: var(--ref-color-danger); /* danger base */
+  --danger-soft: var(--ref-color-danger-light); /* danger text / highlight */
+  --danger-surface: var(--ref-color-danger-bg); /* danger badge and button */
+  --danger-surface-soft: var(--ref-color-danger-bg); /* danger alert */
+  --danger-border: var(--ref-color-danger-light); /* danger border */
+  --danger-border-strong: var(--ref-color-danger); /* stronger danger border */
+  --danger-border-emphasis: var(--ref-color-danger); /* invalid field border */
+  --danger-ring-inset: var(--ref-color-danger-bg); /* invalid field inset ring */
 
-  --info: var(--ref-color-info-500); /* info base */
-  --info-soft: var(--ref-color-info-300); /* info text / highlight */
-  --info-surface: rgba(56, 189, 248, 0.24); /* info badge and chip */
-  --info-surface-soft: rgba(14, 165, 233, 0.12); /* info alert */
-  --info-border: rgba(56, 189, 248, 0.42); /* info border */
+  --info: var(--ref-color-info); /* info base */
+  --info-soft: var(--ref-color-info-light); /* info text / highlight */
+  --info-surface: var(--ref-color-info-bg); /* info badge and chip */
+  --info-surface-soft: var(--ref-color-info-bg); /* info alert */
+  --info-border: var(--ref-color-info-light); /* info border */
 
   /* Gradients */
   --gradient-page-base: linear-gradient(180deg, var(--bg-canvas) 0%, var(--bg) 100%); /* base page background */
@@ -79,14 +79,14 @@
   --gradient-brand-hover: var(--ref-gradient-brand-hover); /* primary brand hover */
   --gradient-accent: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%); /* accent demo gradient */
   --gradient-progress-success: var(--ref-gradient-success); /* progress bar fill */
-  --gradient-surface-media: linear-gradient(135deg, var(--secondary) 0%, var(--bg) 100%); /* media / hero card fill */
+  --gradient-surface-media: linear-gradient(135deg, var(--secondary) 0%, var(--bg-canvas) 100%); /* media / hero card fill */
   --gradient-surface-mobile: linear-gradient(180deg, var(--surface-raised) 0%, var(--surface) 100%); /* mobile shell surface */
 
   /* Radius, shadow, spacing */
   --radius-md: 18px; /* standard radius */
   --radius-lg: 24px; /* large card radius */
-  --shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.22); /* default panel shadow */
-  --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.36); /* overlay shadow */
+  --shadow-sm: 0 10px 30px var(--ref-color-primary-dark); /* default panel shadow */
+  --shadow-md: 0 18px 50px var(--ref-color-primary-dark); /* overlay shadow */
   --space-2: 8px; /* tight spacing */
   --space-3: 12px; /* compact spacing */
   --space-4: 16px; /* standard spacing */
