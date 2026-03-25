@@ -5,12 +5,13 @@
      This is the layer a developer should consume in product code. */
 
   /* Backgrounds and surfaces */
-  --bg: var(--ref-color-primary); /* app page background */
+  --bg: var(--ref-color-primary-dark); /* app page background */
   --bg-canvas: var(--ref-color-primary-dark); /* deepest background */
   --surface: var(--ref-color-primary-dark); /* low-emphasis surface: inputs, tabs, compact containers */
   --surface-hover: var(--ref-color-primary); /* hover state for neutral surfaces */
   --surface-active: var(--ref-color-primary-light); /* active state for neutral surfaces */
   --surface-raised: var(--ref-color-primary-light); /* cards, panels, secondary buttons */
+  --surface-raised-top: color-mix(in srgb, var(--surface-raised) 80%, var(--white) 20%); /* top card stacked above a raised card */
   --surface-raised-border: var(--ref-color-tertiary); /* border for raised surfaces */
   --surface-contrast: var(--ref-color-secondary-light); /* contrast highlight / skeleton midpoint */
   --surface-inverse: var(--ref-color-text-base); /* light track and inverse surface */
@@ -77,7 +78,7 @@
   --gradient-page-base: linear-gradient(180deg, var(--bg-canvas) 0%, var(--bg) 100%); /* base page background */
   --gradient-brand: var(--ref-gradient-brand); /* primary brand fill */
   --gradient-brand-hover: var(--ref-gradient-brand-hover); /* primary brand hover */
-  --gradient-accent: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%); /* accent demo gradient */
+  --gradient-accent: var(--secondary); /* accent gradient for decorative use */
   --gradient-progress-success: var(--ref-gradient-success); /* progress bar fill */
   --gradient-surface-media: linear-gradient(135deg, var(--secondary) 0%, var(--bg-canvas) 100%); /* media / hero card fill */
   --gradient-surface-mobile: linear-gradient(180deg, var(--surface-raised) 0%, var(--surface) 100%); /* mobile shell surface */

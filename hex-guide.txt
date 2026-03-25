@@ -1,0 +1,182 @@
+COLOR SYSTEM GUIDE
+
+Objectif
+
+Appliquer cette palette a un projet existant en conservant les memes roles visuels:
+- fond global
+- surfaces
+- textes
+- actions principales
+- etats interactifs
+- feedback systeme
+
+
+1. Palette semantique
+
+Fondations
+- Fond page principal: #173753
+- Fond page secondaire / fond profond: #173753
+- Surface basse: #173753
+- Surface hover neutre: #22405B
+- Surface active neutre: #375A78
+- Surface elevee: #375A78
+- Surface elevee superieure: #5C7891
+- Surface inverse claire: #F0EFF4
+- Bordure standard: #616264
+- Bordure forte: #77787A
+- Bordure contraste: #F0EFF4BD
+
+Texte
+- Texte principal: #F0EFF4
+- Texte secondaire: #F0EFF4BD
+- Texte inverse sur fond sombre: #173753
+
+Brand / actions
+- Couleur CTA principale: #FFC300
+- Hover CTA principale: #FFE07A
+- Ombre / variante foncee CTA principale: #AC8400
+- Accent secondaire: #00A8E8
+- Accent secondaire hover / actif fonce: #0178A6
+- Accent secondaire clair / bordure active: #7AD2F3
+
+Succes
+- Base succes: #2DB53D
+- Fond succes leger: #22C55E1F
+- Texte / bordure succes clairs: #75CF80
+
+Warning
+- Base warning: #F68704
+- Fond warning leger: #F687041F
+- Texte / bordure warning clairs: #FFD000
+
+Danger
+- Base danger: #F14042
+- Fond danger leger: #EF44441F
+- Texte / bordure danger clairs: #F68182
+
+Info / focus
+- Base info: #0EA5E9
+- Fond info leger: #0EA5E91F
+- Texte / bordure info clairs: #58C6F0
+
+Neutres complementaires
+- Neutre principal: #616264
+- Neutre clair: #77787A
+- Neutre fonce: #45525E
+
+
+2. Regles generiques par role
+
+Fond page
+- Utiliser #173753.
+
+Surface basse
+- Utiliser #173753 pour champs, tabs, containers compacts, surfaces discretes.
+
+Surface hover neutre
+- Utiliser #22405B pour le hover d’une surface neutre.
+
+Surface active neutre
+- Utiliser #375A78 pour un etat actif discret ou une surface plus visible.
+
+Surface elevee
+- Utiliser #375A78 pour cards, panels, modales, drawers, blocs principaux.
+
+Surface elevee superieure
+- Utiliser #5C7891 pour une petite card ou un element pose au-dessus d’une autre surface elevee.
+
+Bordures
+- Bordure standard: #616264.
+- Bordure forte: #77787A.
+- Bordure contraste: #F0EFF4BD.
+
+Texte principal
+- Utiliser #F0EFF4.
+
+Texte secondaire
+- Utiliser #F0EFF4BD.
+
+Texte inverse
+- Utiliser #173753 uniquement sur fond clair.
+
+Primary CTA
+- Fond principal: #FFC300.
+- Texte sur CTA principal: #F0EFF4.
+- Variante / profondeur: #AC8400.
+
+Secondary accent
+- Utiliser #00A8E8 pour actions secondaires visibles, focus forts, elements selectionnes, accent UI.
+
+Success
+- Base: #2DB53D.
+- Fond leger: #22C55E1F.
+- Bordure / texte clair: #75CF80.
+
+Warning
+- Base: #F68704.
+- Fond leger: #F687041F.
+- Bordure / texte clair: #FFD000.
+
+Danger
+- Base: #F14042.
+- Fond leger: #EF44441F.
+- Bordure / texte clair: #F68182.
+
+Info
+- Base: #0EA5E9.
+- Fond leger: #0EA5E91F.
+- Bordure / texte clair: #58C6F0.
+
+Focus
+- Utiliser #58C6F0 pour les anneaux de focus visibles.
+
+Hover secondaire / selection
+- Fond actif: #0178A6.
+- Bordure active: #7AD2F3.
+- Texte sur etat actif: #F0EFF4.
+
+
+3. Etats generiques
+
+Default
+- Fond page: #173753.
+- Surface basse: #173753.
+- Surface elevee: #375A78.
+- Texte principal: #F0EFF4.
+- Texte secondaire: #F0EFF4BD.
+- Bordure standard: #616264.
+
+Hover
+- Surface neutre hover: #22405B.
+- CTA principal hover: #FFE07A.
+- Action secondaire hover / selection hover: #0178A6.
+- Bordure hover/selection: #7AD2F3.
+
+Active
+- Surface active neutre: #375A78.
+- Etat selectionne accentue: fond #0178A6, bordure #7AD2F3, texte #F0EFF4.
+- Controle actif type toggle / checkbox / radio / switch: #00A8E8.
+
+Focus
+- Anneau de focus: #58C6F0.
+
+Error
+- Base erreur: #F14042.
+- Fond erreur leger: #EF44441F.
+- Bordure / accent clair erreur: #F68182.
+- Si un champ erreur a besoin d’un fond un peu plus visible, utiliser un melange sombre base sur #173753 avec un apport de #F14042.
+
+Disabled
+- Ne pas definir une nouvelle couleur.
+- Garder la couleur du composant et reduire l’opacite a 50%.
+
+
+4. Recommandations d’application
+
+- Garder #173753 comme couleur dominante de fond.
+- Garder #375A78 comme surface principale de cartes et blocs.
+- Reserver #FFC300 aux vraies actions principales.
+- Utiliser #00A8E8 pour l’interaction, la selection, les liens importants et les controles actifs.
+- Utiliser #F68704 pour les warnings, #F14042 pour les erreurs, #2DB53D pour les succes.
+- Utiliser #F0EFF4 pour la lisibilite du texte principal sur fond sombre.
+- Utiliser #F0EFF4BD uniquement pour le second niveau d’information.
