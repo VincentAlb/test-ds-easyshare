@@ -1,0 +1,96 @@
+@import url("./tokens-reference.css");
+
+:root {
+  /* Public tokens
+     This is the layer a developer should consume in product code. */
+
+  /* Backgrounds and surfaces */
+  --bg: var(--ref-color-ocean-800); /* app page background */
+  --bg-canvas: var(--ref-color-ocean-900); /* deepest background */
+  --surface: rgba(52, 90, 120, 0.42); /* low-emphasis surface: inputs, tabs, compact containers */
+  --surface-hover: rgba(52, 90, 120, 0.58); /* hover state for neutral surfaces */
+  --surface-active: rgba(52, 90, 120, 0.72); /* active state for neutral surfaces */
+  --surface-raised: rgba(36, 69, 96, 0.84); /* cards, panels, secondary buttons */
+  --surface-raised-border: rgba(255, 255, 255, 0.16); /* border for raised surfaces */
+  --surface-contrast: rgba(255, 255, 255, 0.18); /* contrast highlight / skeleton midpoint */
+  --surface-inverse: rgba(255, 255, 255, 0.28); /* light track and inverse surface */
+  --surface-overlay: rgba(52, 90, 120, 0.9); /* sticky nav and overlay panel */
+  --surface-overlay-strong: rgba(26, 51, 72, 0.92); /* tooltip and strong overlay */
+
+  /* Borders */
+  --line: var(--ref-color-glass-border); /* default border */
+  --line-strong: rgba(255, 255, 255, 0.18); /* stronger border on elevated surfaces */
+  --line-contrast: var(--ref-color-glass-border-strong); /* high-contrast border */
+
+  /* Text */
+  --text: var(--ref-color-text-base); /* default text */
+  --text-soft: var(--ref-color-text-muted); /* secondary text */
+  --white: var(--ref-color-white); /* text on saturated fills */
+
+  /* Brand and action */
+  --primary: var(--ref-color-brand-500); /* primary CTA background */
+  --primary-hover: var(--ref-color-brand-hover); /* primary CTA hover */
+  --primary-soft: var(--ref-color-brand-highlight); /* soft brand highlight */
+  --primary-glow: rgba(255, 224, 102, 0.08); /* decorative yellow glow */
+
+  --secondary: var(--ref-color-ocean-400); /* secondary accent */
+  --secondary-hover: var(--ref-color-info-500); /* hover for secondary buttons */
+  --secondary-glow: rgba(52, 90, 120, 0.16); /* decorative blue glow */
+  --neutral: var(--ref-color-ocean-500); /* neutral support tone */
+
+  /* Shared interactive blue */
+  --focus-ring: rgba(56, 189, 248, 0.42); /* global focus ring */
+  --interactive-selected-bg: rgba(56, 189, 248, 0.34); /* active tabs, chips, filters */
+  --interactive-selected-border: rgba(56, 189, 248, 0.42); /* selected border */
+  --interactive-selected-text: var(--ref-color-white); /* selected text */
+  --interactive-fill-strong: var(--ref-color-info-500); /* toggle on and strong interactive fill */
+
+  /* Feedback */
+  --success: var(--ref-color-success-500); /* success base */
+  --success-soft: var(--ref-color-success-300); /* success text / highlight */
+  --success-surface: rgba(34, 197, 94, 0.16); /* success badge and chip */
+  --success-surface-soft: rgba(34, 197, 94, 0.12); /* success alert */
+  --success-border: rgba(34, 197, 94, 0.24); /* success border */
+
+  --warning: var(--ref-color-warning-500); /* warning base */
+  --warning-soft: #ffd08a; /* warning text / highlight */
+  --warning-surface: rgba(246, 135, 4, 0.16); /* warning badge and chip */
+  --warning-surface-soft: rgba(246, 135, 4, 0.12); /* warning alert */
+  --warning-border: rgba(246, 135, 4, 0.24); /* warning border */
+
+  --danger: var(--ref-color-danger-500); /* danger base */
+  --danger-soft: #ffb7b8; /* danger text / highlight */
+  --danger-surface: rgba(239, 68, 68, 0.16); /* danger badge and button */
+  --danger-surface-soft: rgba(239, 68, 68, 0.12); /* danger alert */
+  --danger-border: rgba(239, 68, 68, 0.24); /* danger border */
+  --danger-border-strong: rgba(241, 64, 66, 0.32); /* stronger danger border */
+  --danger-border-emphasis: rgba(241, 64, 66, 0.72); /* invalid field border */
+  --danger-ring-inset: rgba(239, 68, 68, 0.18); /* invalid field inset ring */
+
+  --info: var(--ref-color-info-500); /* info base */
+  --info-soft: var(--ref-color-info-300); /* info text / highlight */
+  --info-surface: rgba(56, 189, 248, 0.24); /* info badge and chip */
+  --info-surface-soft: rgba(14, 165, 233, 0.12); /* info alert */
+  --info-border: rgba(56, 189, 248, 0.42); /* info border */
+
+  /* Gradients */
+  --gradient-page-base: linear-gradient(180deg, var(--bg-canvas) 0%, var(--bg) 100%); /* base page background */
+  --gradient-brand: var(--ref-gradient-brand); /* primary brand fill */
+  --gradient-brand-hover: var(--ref-gradient-brand-hover); /* primary brand hover */
+  --gradient-accent: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%); /* accent demo gradient */
+  --gradient-progress-success: var(--ref-gradient-success); /* progress bar fill */
+  --gradient-surface-media: linear-gradient(135deg, var(--secondary) 0%, var(--bg) 100%); /* media / hero card fill */
+  --gradient-surface-mobile: linear-gradient(180deg, var(--surface-raised) 0%, var(--surface) 100%); /* mobile shell surface */
+
+  /* Radius, shadow, spacing */
+  --radius-md: 18px; /* standard radius */
+  --radius-lg: 24px; /* large card radius */
+  --shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.22); /* default panel shadow */
+  --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.36); /* overlay shadow */
+  --space-2: 8px; /* tight spacing */
+  --space-3: 12px; /* compact spacing */
+  --space-4: 16px; /* standard spacing */
+  --space-5: 24px; /* comfortable spacing */
+  --space-6: 32px; /* large spacing */
+  --space-7: 48px; /* section spacing */
+}

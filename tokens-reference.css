@@ -1,0 +1,31 @@
+:root {
+  /* Reference tokens
+     Base palette only. Do not consume directly in product components when a public token exists. */
+  --ref-color-brand-500: #ffc300;
+  --ref-color-brand-hover: #ffd000;
+  --ref-color-brand-highlight: #fff280;
+
+  --ref-color-ocean-400: #345a78;
+  --ref-color-ocean-500: #305577;
+  --ref-color-ocean-800: #173753;
+  --ref-color-ocean-900: #132e46;
+
+  --ref-color-success-300: #4ade80;
+  --ref-color-success-500: #22c55e;
+  --ref-color-info-300: #38bdf8;
+  --ref-color-info-500: #0ea5e9;
+  --ref-color-warning-500: #f68704;
+  --ref-color-danger-500: #ef4444;
+
+  --ref-color-white: #ffffff;
+  --ref-color-black: #000000;
+  --ref-color-text-base: #f0eff4;
+
+  --ref-color-glass-border: rgba(255, 255, 255, 0.1);
+  --ref-color-glass-border-strong: rgba(255, 255, 255, 0.2);
+  --ref-color-text-muted: rgba(240, 239, 244, 0.74);
+
+  --ref-gradient-brand: linear-gradient(135deg, #ffe066 0%, #ffc300 50%, #ce9e00 100%);
+  --ref-gradient-brand-hover: linear-gradient(135deg, #fff280 0%, #ffd000 50%, #f5b800 100%);
+  --ref-gradient-success: linear-gradient(90deg, #4ade80 0%, #22c55e 50%, #16a34a 100%);
+}
